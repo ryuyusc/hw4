@@ -221,9 +221,8 @@ public:
 
         iterator& operator++();
 
-        Node<Key, Value> *current_;
-
     protected:
+        Node<Key, Value> *current_;
         friend class BinarySearchTree<Key, Value>;
         iterator(Node<Key,Value>* ptr);
     };
